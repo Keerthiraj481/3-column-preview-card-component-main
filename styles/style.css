@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-bright-orange: hsl(31, 77%, 52%);
+  --clr-dark-cyan: hsl(184, 100%, 22%);
+  --clr-very-dark-cyan: hsl(179, 100%, 13%);
+  --clr-transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --clr-very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Big Shoulders Display", cursive;
+  font-family: "Lexend Deca", sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--clr-very-light-gray-background-headings-buttons);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  margin: 2rem auto;
+  width: 22rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-one {
+  background-color: var(--clr-bright-orange);
+  padding: 2rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.img-sedan {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name-sedan {
+  color: var(--clr-very-light-gray-background-headings-buttons);
+  /* margin-top: 1rem;
+  margin-bottom: 0.5rem; */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.sedan-details {
+  color: var(--clr-transparent-white-paragraphs);
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  /* padding-bottom: 1rem; */
+}
+
+.btn-sedan {
+  background-color: var(--clr-very-light-gray-background-headings-buttons);
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border-color: 12px solid var(--clr-bright-orange);
+  color: var(--clr-bright-orange);
+  font-weight: 400;
+}
+
+.card-two {
+  background-color: var(--clr-dark-cyan);
+  padding: 2rem;
+}
+
+.img-suvs {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 12px;
+}
+
+.name-suvs {
+  color: var(--clr-very-light-gray-background-headings-buttons);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+
+.suvs-details {
+  color: var(--clr-transparent-white-paragraphs);
+  margin-bottom: 2.1rem;
+  line-height: 25px;
+  padding-bottom: 1rem;
+}
+
+.btn-suvs {
+  background-color: var(--clr-very-light-gray-background-headings-buttons);
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border-color: 12px solid var(--clr-dark-cyan);
+  color: var(--clr-dark-cyan);
+  font-weight: 400;
+}
+
+.card-three {
+  background-color: var(--clr-very-dark-cyan);
+  padding: 2rem;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.img-luxury {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name-luxury {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: var(--clr-very-light-gray-background-headings-buttons);
+  font-family: "Big Shoulders Display", cursive;
+  margin-bottom: 5px;
+}
+
+.luxury-details {
+  color: var(--clr-transparent-white-paragraphs);
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.75rem;
+  padding-bottom: 1rem;
+}
+
+.btn-luxury {
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  border-color: 1px solid var(--clr-very-dark-cyan);
+  background-color: var(--clr-very-light-gray-background-headings-buttons);
+  color: var(--clr-very-dark-cyan);
+  font-weight: 400;
+  margin-top: 5px;
+}
+/* Responsive page to desktop */
+@media screen and (min-width:899px){
+  .box {
+    margin: 8rem;
+    flex-direction: row;
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-one {
+    background-color: var(--clr-bright-orange);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 12px;
+    width: 20rem;
+  }
+
+  .card-two {
+    width: 20rem;
+  }
+
+  .card-three {
+    background-color: var(--clr-very-dark-cyan);
+    border-top-left-radius: 0;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 12px;
+    width: 20rem;
+  }
+}
